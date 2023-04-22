@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="CG-Maman13.cpp">
+    <ClCompile Include="Temp.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
