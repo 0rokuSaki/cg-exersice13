@@ -1,6 +1,6 @@
 /*****************************************************************//**
  * \file   Constants.h
- * \brief  TODO: Add description
+ * \brief  Constants for the program.
  * 
  * \author aaron
  * \date   April 2023
@@ -9,15 +9,15 @@
 #pragma once
 
 /* General constants */
-#define REQUIRED_ARGC 5                 // Number of required command line arguments
+#define REQUIRED_ARGC 5
 
 /* Window constants */
-#define WINDOW_INIT_POS  100, 100       // Initial window position
-#define WINDOW_INIT_SIZE 640, 480       // Initial window size (width, height)
-#define WINDOW_TITLE     "CG Maman 13"  // Window title
+#define WINDOW_INIT_POS  100, 100
+#define WINDOW_INIT_SIZE 640, 480
+#define WINDOW_TITLE     "CG Maman 13"
 
 /* Display constants */
-#define WORLD_COORD       0.0, 100.0, 0.0, 100.0  // World coordinates values
+#define WORLD_COORD       0.0, 100.0, 0.0, 100.0
 
 /* Animation constants */
 #define SLEEP_DURATION_MS 750

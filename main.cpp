@@ -2,7 +2,8 @@
  * \file   main.cpp
  * \brief  My solution for Q4 in exersice ('Maman') 13 in Computer Graphics (20562) course.
  *
- * TODO: Add description
+ * This program demonstrates the Cohen-Sutherland line clipping algorithm
+ * by showing a step-by-step line clipping.
  *
  * Repo link: https://github.com/0rokuSaki/cg-exersice13
  *

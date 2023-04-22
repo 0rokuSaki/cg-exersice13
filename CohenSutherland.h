@@ -1,6 +1,10 @@
 /*****************************************************************//**
  * \file   CohenSutherland.h
- * \brief  TODO: Add description
+ * \brief  Functions for Cohen-Sutherland algorithm.
+ * 
+ * Algorithm and functions are based on the implementation of Cohen-Sutherland
+ * in the book
+ * 'Computer Graphics with OpenGL 4th edition by Donald Hearn and Pauline Baker'
  * 
  * \author aaron
  * \date   April 2023
@@ -80,71 +84,4 @@ namespace CohenSutherland
 
         return code;
     }
-    void lineClipCohSuth(wcPt2D winMin, wcPt2D winMax, wcPt2D p1, wcPt2D p2)
-    {
-        GLubyte code1, code2;
-        GLboolean done = false, plotLine = true;
-        GLfloat m;
-
-        while (!done)
-        {
-            code1 = encode(p1, winMin, winMax);
-            code2 = encode(p2, winMin, winMax);
-            if (accept(code1, code2))
-            {
-                done = true;
-                plotLine = true;
-            }
-            else
-            {
-                if (reject(code1, code2))
-                {
-                    done = true;
-                }
-                else
-                {
-                    /* Label the endpoint outside the display window as p1. */
-                    if (inside(code1))
-                    {
-                        swap(&p1, &p2);
-                        swap(&code1, &code2);
-                    }
-                    /* Use slope m to find line-clipEdge intersection. */
-                    if (p2.x != p1.x)
-                    {
-                        m = (p2.y - p1.y) / (p2.x - p1.x);
-                    }
-                    if (code1 & winLeftBitCode)
-                    {
-                        p1.y += (winMin.x - p1.x) * m;
-                        p1.x = winMin.x;
-                    }
-                    else if (code1 & winRightBitCode)
-                    {
-                        p1.y += (winMax.x - p1.x) * m;
-                        p1.x = winMax.x;
-                    }
-                    else if (code1 & winBottomBitCode)
-                    {
-                        /* Need to update p1.x for nonvertical lines only. */
-                        if (p2.x != p1.x)
-                        {
-                            p1.x += (winMin.y - p1.y) / m;
-                        }
-                        p1.y = winMin.y;
-                    }
-                    else if (code1 & winTopBitCode)
-                    {
-                        if (p2.x != p1.x)
-                        {
-                            p1.x += (winMax.y - p1.y) / m;
-                        }
-                        p1.y = winMax.y;
-                    }
-                }
-            }
-        }
-
-    }
 }
-
