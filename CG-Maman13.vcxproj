@@ -127,7 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp" />
+    <ClCompile Include="CG-Maman13.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CohenSutherland.h" />

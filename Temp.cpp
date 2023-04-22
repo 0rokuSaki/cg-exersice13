@@ -2,8 +2,10 @@
  * \file   main.cpp
  * \brief  My solution for Q4 in exersice ('Maman') 13 in Computer Graphics (20562) course.
  *
- * This program demonstrates the Cohen-Sutherland line clipping algorithm
- * by showing a step-by-step line clipping.
+ * This program demonstrates the Cohen-Sutherland line clipping algorithm by
+ * showing a step-by-step animation.
+ * It is based on the Cohen-Sutherland algorithm implementation in the book
+ * 'Computer Graphics with OpenGL, 4th edition' by Donald Hearn and Pauline Baker.
  *
  * Repo link: https://github.com/0rokuSaki/cg-exersice13
  *
@@ -11,6 +13,9 @@
  * 1. Setup OpenGL: https://www.geeksforgeeks.org/how-to-setup-opengl-with-visual-studio-2019-on-windows-10/.
  * 2. Select x86 Debug configuration.
  * 3. Build the solution (ctrl + shift + B).
+ * 
+ * *** HOW TO RUN THE PROGRAM ***
+ * CG-Maman13.exe -4.1 2 3.141 -8
  * 
  * \author aaron
  * \date   April 2023
