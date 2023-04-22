@@ -15,7 +15,7 @@
  * 3. Build the solution (ctrl + shift + B).
  * 
  * *** HOW TO RUN THE PROGRAM ***
- * CG-Maman13.exe -4.1 2 3.141 -8
+ * In the command line: CG-Maman13.exe -4.1 2 3.141 -8
  * 
  * \author aaron
  * \date   April 2023
