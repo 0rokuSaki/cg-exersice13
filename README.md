@@ -6,3 +6,5 @@ It is based on the Cohen-Sutherland algorithm implementation in the book 'Comput
 1. Setup OpenGL: https://www.geeksforgeeks.org/how-to-setup-opengl-with-visual-studio-2019-on-windows-10/.
 2. Select x86 Debug configuration.
 3. Build the solution (ctrl + shift + B).
+## HOW TO RUN THE PROGRAM
+In the command line: CG-Maman13.exe -4.1 2 3.141 -8
